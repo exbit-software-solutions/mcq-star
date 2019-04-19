@@ -7,15 +7,396 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
+    android:background="@color/md_green_100"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="2"
+            android:padding="5dp">
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/subjectbasedxm"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="top"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:longClickable="true"
+                android:onClick="subjectbasedxm"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:hapticFeedbackEnabled="true"
+                android:padding="5dp"
+                app:cardBackgroundColor="@color/White"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="top"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/subjectbasedxm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="bottom"
+                    android:padding="10dp"
+                    android:text="বিষয় ভিত্তিক পরীক্ষা"
+                    android:textColor="@color/Black"
+                    android:textSize="20sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ovarallxm"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:longClickable="true"
+                android:onClick="ovarallexam"
+                android:elevation="8dp"
+                android:focusable="true"
+                android:hapticFeedbackEnabled="true"
+                android:padding="5dp"
+                app:cardBackgroundColor="@color/White"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                tools:targetApi="lollipop">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="start"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/overallexam"
+                    android:focusable="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="bottom"
+                    android:padding="10dp"
+                    android:text="সামগ্রিক পরীক্ষা"
+                    android:textColor="@color/Black"
+                    android:textSize="20sp" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="2"
+            android:padding="5dp">
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/add"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="top"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:longClickable="true"
+                android:onClick="add"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:hapticFeedbackEnabled="true"
+                android:padding="2dp"
+                app:cardBackgroundColor="@color/White"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                tools:targetApi="lollipop">
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="top"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/questionbank" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="bottom"
+                    android:padding="10dp"
+                    android:text="প্রশ্ন ব্যাংক ও সমাধান"
+                    android:textColor="@color/Black"
+                    android:textSize="20sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/edit"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:longClickable="true"
+                android:onClick="edit"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:hapticFeedbackEnabled="true"
+                android:padding="2dp"
+                app:cardBackgroundColor="@color/White"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                tools:targetApi="lollipop">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="start"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/markedquestions"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="bottom"
+                    android:text="চিহ্নিত প্রশ্ন"
+                    android:padding="10dp"
+                    android:textColor="@color/Black"
+                    android:textSize="20sp" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/points"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:layout_margin="2dp"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:longClickable="true"
+            android:onClick="points"
+            android:elevation="10dp"
+            android:focusable="true"
+            android:hapticFeedbackEnabled="true"
+            android:padding="2dp"
+            app:cardBackgroundColor="@color/White"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            tools:targetApi="lollipop">
+
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="20dp"
+                android:src="@drawable/points" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="top"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:text="Total points"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end|bottom"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Watch video to get points"
+                android:onClick="videoads"
+                android:textColor="@color/DodgerBlue"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/nav_results"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="top"
+                android:layout_margin="2dp"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:longClickable="true"
+                android:onClick="results"
+                android:elevation="10dp"
+                android:focusable="true"
+                android:hapticFeedbackEnabled="true"
+                android:padding="2dp"
+                app:cardBackgroundColor="@color/White"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                tools:targetApi="lollipop">
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center|bottom"
+                    android:padding="20dp"
+                    android:src="@drawable/piechart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="10dp"
+                    android:text="ফলাফল চার্ট"
+                    android:textColor="@color/Teal"
+                    android:textSize="25sp" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/events"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="top"
+                android:layout_margin="2dp"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:longClickable="true"
+                android:onClick="events"
+                android:elevation="10dp"
+                android:focusable="true"
+                android:hapticFeedbackEnabled="true"
+                android:padding="2dp"
+                app:cardBackgroundColor="@color/md_blue_100"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                tools:targetApi="lollipop">
+
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:padding="20dp"
+                    android:src="@drawable/events" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="top"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Upcoming events"
+                    android:textColor="@color/md_red_600"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Next model test will be at 22/12/2019 6.00pm"
+                    android:textColor="@color/Teal"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
 
 </ScrollView>

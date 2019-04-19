@@ -10,13 +10,21 @@
             android:icon="@drawable/ic_notifications_black_24dp"
             android:title="Notifications" />
         <item
-            android:id="@+id/nav_leaderboard"
+            android:id="@+id/nav_results"
             android:icon="@drawable/ic_insert_chart_black_24dp"
+            android:title="Results" />
+        <item
+            android:id="@+id/nav_leaderboard"
+            android:icon="@drawable/ic_school_black_24dp"
             android:title="Leader board" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
             android:title="Settings" />
+        <item
+            android:id="@+id/nav_rules"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="Rules" />
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_power_settings_new_black_24dp"
@@ -29,6 +37,14 @@
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
                 android:title="Share"/>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_star_black_24dp"
+                android:title="Rate us"/>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="About us"/>
             <item
                 android:id="@+id/nav_sendfeedback"
                 android:icon="@drawable/ic_feedback_black_24dp"
