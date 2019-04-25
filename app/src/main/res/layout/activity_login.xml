@@ -1,130 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="fill"
-    android:background="@color/WhiteSmoke"
-    tools:context=".Login">
+    android:background="@color/IndianRed"
+    tools:context=".LoginActivity">
 
-
-    <LinearLayout
+    <ImageView
+        android:id="@+id/imageViewID"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_gravity="center_vertical"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/mcq_yellow"
+        android:tint="@color/md_green_400"
+        android:layout_margin="10dp"
+        />
+    <ProgressBar
+        android:id="@+id/progressBarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewID"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
+        android:id="@+id/googleSignInBtnId"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/progressBarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/google_sign_up"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:isDarkTheme="true" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/coordinatorLayout"
         >
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_gravity="center"
-            android:src="@drawable/mcq_yellow"
-            android:tint="@color/md_green_400"/>
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_gravity="center"
-            app:cardElevation="5dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            app:cardCornerRadius="10dp">
 
-            <EditText
-                android:id="@+id/logInEmailId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_gravity="top"
-                android:hint="Email"
-                android:textColor="@color/Teal"
-                android:textColorHint="@color/Teal"
-                android:padding="15dp"
-                android:inputType="textEmailAddress"
-                android:drawableLeft="@drawable/ic_email_black_24dp"
-                android:drawableTint="@color/Teal"/>
-
-            <!-- Password -->
-
-
-            <EditText
-                android:id="@+id/logInPasswordId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:padding="15dp"
-                android:textColor="@color/Teal"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="15dp"
-                android:hint="Password"
-                android:textColorHint="@color/Teal"
-                android:inputType="textPassword"
-                android:drawableLeft="@drawable/ic_lock_black_24dp"
-                android:drawableTint="@color/Teal"/>
-            <ProgressBar
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/loginProgressbarId"
-                android:visibility="gone"
-                />
-
-        </android.support.v7.widget.CardView>
+    </android.support.design.widget.CoordinatorLayout>
 
 
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/cardViewIdLogIn"
-            android:onClick="Login"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            android:layout_marginTop="10dp"
-            app:cardBackgroundColor="@color/md_green_500"
-            android:layout_gravity="center">
-            <TextView
-                android:id="@+id/login"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Login"
-                android:textStyle="bold"
-                android:textColor="@color/White"
-                android:textSize="25sp"
-                android:padding="10dp"
-                android:gravity="center"
-                />
-        </android.support.v7.widget.CardView>
-        <!-- Forgot Password -->
-        <TextView
-            android:id="@+id/forgotpass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:onClick="ForgetPassword"
-            android:text="Forget password?"
-            android:padding="5dp"
-            android:textColor="@color/DodgerBlue"
-            android:textSize="15sp"
-            android:theme="@style/AppTheme"/>
-        <!-- Sign up -->
-        <TextView
-            android:onClick="Signup"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Sign up"
-            android:textColor="@color/DodgerBlue"
-            android:layout_gravity="center"
-            android:theme="@style/AppTheme"
-            android:layout_marginTop="10dp"
-            tools:ignore="OnClick"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:padding="5dp"
-            android:gravity="center"
-            android:layout_marginBottom="5dp"/>
-
-    </LinearLayout>
 
 
-</ScrollView>
+</RelativeLayout>

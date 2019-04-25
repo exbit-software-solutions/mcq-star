@@ -27,7 +27,7 @@ public class SplashScreen extends Activity implements Runnable
     {
         try
         {
-            Thread.sleep(1500);
+            Thread.sleep(1000);
         }
         catch (Exception e)
         {
@@ -35,8 +35,7 @@ public class SplashScreen extends Activity implements Runnable
         }
         finally
         {
-            startActivity(new Intent(SplashScreen.this, Login.class));
-
+            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
             finish();
         }
     }
