@@ -29,7 +29,8 @@
         <activity android:name=".Notifications"
             android:label="Notifications"/>
         <activity android:name=".Feedback"
-            android:label="Feedback"/>
+            android:label="Feedback"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ForgetPassword"
             android:label="Forget password"
             android:theme="@style/AppTheme.NoActionBar"/>
