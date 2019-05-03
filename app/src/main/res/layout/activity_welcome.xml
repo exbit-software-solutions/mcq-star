@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
+    android:background="@drawable/main_background"
     tools:context=".WelcomeActivity">
 
     <ScrollView
@@ -29,10 +29,10 @@
 
                 <ImageView
                     android:id="@+id/logInImageViewId"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/mcq"
-                    android:layout_margin="20dp"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/mcq_yellow"
+                    android:tint="@color/md_green_500"
                     android:layout_centerHorizontal="true"
                     />
                 <LinearLayout
@@ -48,24 +48,28 @@
                         android:onClick="goLogInActivity"
                         android:id="@+id/logInButtonId"
                         android:layout_below="@+id/logInImageViewId"
-                        android:layout_width="125dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
                         android:background="@drawable/log_in_button"
                         android:text="LOG IN"
-                        android:layout_margin="25dp"
+                        android:textColor="@color/White"
+                        android:layout_margin="20dp"
+                        android:textSize="20sp"
                         />
 
                     <!-- Sign Up -->
                     <Button
                         android:onClick="goSignUpActivity"
                         android:id="@+id/signUpButtonID"
-                        android:layout_width="125dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
                         android:text="Sign Up"
-                        android:layout_margin="25dp"
+                        android:textColor="@color/White"
+                        android:layout_margin="20dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/sign_up_button"
                         android:layout_marginEnd="10dp"
+                        android:textSize="20sp"
                         />
 
                 </LinearLayout>
@@ -103,6 +107,7 @@
                     android:layout_below="@id/googleSignInBtnId"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/facebook_log_in"
+                    android:layout_marginBottom="30dp"
                     />
 
             </RelativeLayout>

@@ -6,7 +6,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen"
-    android:background="@drawable/background_splash">
+    android:background="@drawable/main_background">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mcq_yellow"
+        android:layout_gravity="center"
+        android:tint="@color/md_green_500"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:text="Developed by"
+        android:layout_marginBottom="50dp"
+        android:textSize="20sp"
+        android:textColor="@color/BlueViolet"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:text="Exbit Software Solutions"
+        android:layout_marginBottom="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/md_red_500"/>
 
 </FrameLayout>

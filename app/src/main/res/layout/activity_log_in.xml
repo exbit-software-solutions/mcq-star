@@ -1,9 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_background"
     tools:context=".LogInActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textColor="@color/BlueViolet"
+            android:textSize="40sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/TextAppearance.MaterialComponents.Headline1"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_gravity="center"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="10dp">
+
+            <!--Email-->
+            <EditText
+                android:id="@+id/EmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Email"
+                android:textColor="@color/Teal"
+                android:textColorHint="@color/Teal"
+                android:padding="15dp"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawableTint="@color/Teal"/>
+
+            <!-- Password -->
+
+
+            <EditText
+                android:id="@+id/PasswordId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="15dp"
+                android:textColor="@color/Teal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Password"
+                android:textColorHint="@color/Teal"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawableTint="@color/Teal"/>
+
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Sign Up -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/LoginId"
+            android:contextClickable="true"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            app:cardBackgroundColor="@color/SlateBlue"
+            android:layout_gravity="center|end"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="20dp"
+            >
+            <TextView
+                android:id="@+id/logInButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Login"
+                android:textColor="@color/White"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>
