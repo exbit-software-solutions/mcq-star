@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".WelcomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/logInRelativeID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <ImageView
+                    android:id="@+id/logInImageViewId"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/mcq"
+                    android:layout_margin="20dp"
+                    android:layout_centerHorizontal="true"
+                    />
+                <LinearLayout
+                    android:id="@+id/welcomeLinearLayoutId"
+                    android:layout_below="@+id/logInImageViewId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    >
+                    <!-- Log In -->
+                    <Button
+                        android:onClick="goLogInActivity"
+                        android:id="@+id/logInButtonId"
+                        android:layout_below="@+id/logInImageViewId"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/log_in_button"
+                        android:text="LOG IN"
+                        android:layout_margin="25dp"
+                        />
+
+                    <!-- Sign Up -->
+                    <Button
+                        android:onClick="goSignUpActivity"
+                        android:id="@+id/signUpButtonID"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sign Up"
+                        android:layout_margin="25dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/sign_up_button"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <ProgressBar
+                    android:id="@+id/progressBarId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/welcomeLinearLayoutId"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTintMode="add"
+                    android:visibility="visible"
+                    android:layout_margin="10dp"
+                    tools:ignore="UnusedAttribute" />
+
+                <com.shobhitpuri.custombuttons.GoogleSignInButton
+                    android:id="@+id/googleSignInBtnId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/progressBarId"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/google_sign_up"
+                    app:isDarkTheme="true" />
+
+                <Button
+                    android:id="@+id/fb_logInButtonID"
+                    android:layout_width="195dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/googleSignInBtnId"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/facebook_log_in"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

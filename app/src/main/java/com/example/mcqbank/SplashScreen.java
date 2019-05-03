@@ -2,7 +2,6 @@ package com.example.mcqbank;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class SplashScreen extends Activity implements Runnable
@@ -35,7 +34,7 @@ public class SplashScreen extends Activity implements Runnable
         }
         finally
         {
-            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            startActivity(new Intent(getApplicationContext(), WelcomeActivity.class));
             finish();
         }
     }

@@ -156,15 +156,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-    @Override
+/*    @Override
     protected void onStart() {
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
         if(account == null) {
-            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            startActivity(new Intent(this, WelcomeActivity.class));
         }
         super.onStart();
 
-    }
+    }*/
 
     private void updateNavHeader(){
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(MainActivity.this);
@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         Toast.makeText(MainActivity.this,"Successfully signed out",Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                        startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
                         finish();
                     }
                 });
