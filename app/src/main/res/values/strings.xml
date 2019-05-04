@@ -173,4 +173,37 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+
+    <string-array name="nine_ten_subject">
+        <item>বাংলা সাহিত্য</item>
+        <item>বাংলা ভাষার ব্যাকরণ</item>
+        <item>পদার্থবিজ্ঞান  </item>
+        <item>রসায়ন </item>
+        <item>বাংলা সহপাঠ</item>
+        <item>রচনাসম্ভার </item>
+        <item>English for Toady</item>
+        <item>English Grammar and Composition</item>
+        <item>জীববিজ্ঞান </item>
+        <item>গণিত</item>
+        <item>উচ্চতর গণিত</item>
+        <item>তথ্য ও যোগাযোগ প্রযুক্তি</item>
+        <item>বাংলাদেশ ও বিশ্বপরিচয়</item>
+        <item>বাংলাদেশের ইতিহাস ও বিশ্বসভ্যতা </item>
+        <item>ভূগোল ও পরিবেশ </item>
+        <item>অর্থনীতি </item>
+        <item>কৃষিশিক্ষা </item>
+        <item>চারু ও কারুকলা</item>
+        <item>গার্হস্থ্য বিজ্ঞান </item>
+        <item>পৌরনীতি ও নাগরিকতা  </item>
+        <item>হিসাববিজ্ঞান  </item>
+        <item>ফিন্যান্স ও ব্যাংকিং </item>
+        <item>ব্যবসায় উদ্যোগ</item>
+        <item>ইসলাম ও নৈতিক শিক্ষা</item>
+        <item>হিন্দু ধর্ম ও নৈতিক শিক্ষা</item>
+        <item>বৌদ্ধধর্ম ও নৈতিক শিক্ষা</item>
+        <item>খ্রিষ্টধর্ম ও নৈতিক শিক্ষা</item>
+        <item>বিজ্ঞান</item>
+        <item>শারীরিক শিক্ষা, স্বাস্থ্য বিজ্ঞান ও খেলাধুলা</item>
+        <item>ক্যারিয়ার এডুকেশন </item>
+    </string-array>
 </resources>

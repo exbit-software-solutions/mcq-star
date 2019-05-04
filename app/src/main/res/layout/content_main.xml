@@ -35,7 +35,7 @@
                 android:clickable="true"
                 android:contextClickable="true"
                 android:longClickable="true"
-                android:onClick="subjectbasedxm"
+                android:onClick="subjectBasedExam"
                 android:elevation="5dp"
                 android:focusable="true"
                 android:hapticFeedbackEnabled="true"

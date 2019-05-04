@@ -74,9 +74,6 @@
 
                 </LinearLayout>
 
-
-
-
                 <ProgressBar
                     android:id="@+id/progressBarId"
                     android:layout_width="wrap_content"
