@@ -1,4 +1,4 @@
-package com.example.mcqbank;
+package com.example.mcqbank.content;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -18,6 +18,12 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mcqbank.R;
+import com.example.mcqbank.starting.WelcomeActivity;
+import com.example.mcqbank.navigation.Feedback;
+import com.example.mcqbank.navigation.LeaderBoard;
+import com.example.mcqbank.navigation.Notifications;
+import com.example.mcqbank.navigation.SettingsActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -99,12 +105,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.nav_notifications) {
-            Intent intent = new Intent(MainActivity.this,Notifications.class);
+            Intent intent = new Intent(MainActivity.this, Notifications.class);
             startActivity(intent);
 
         }
         else if (id == R.id.nav_leaderboard) {
-            Intent intent = new Intent(MainActivity.this,LeaderBoard.class);
+            Intent intent = new Intent(MainActivity.this, LeaderBoard.class);
             startActivity(intent);
 
         }
@@ -133,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         }
         else if (id == R.id.nav_manage) {
-            Intent intent = new Intent(MainActivity.this,SettingsActivity.class);
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(intent);
 
         }
@@ -141,7 +147,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         }
         else if (id == R.id.nav_sendfeedback) {
-            Intent intent = new Intent(MainActivity.this,Feedback.class);
+            Intent intent = new Intent(MainActivity.this, Feedback.class);
             startActivity(intent);
         }
         else if (id == R.id.nav_web) {
@@ -184,6 +190,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void subjectBasedExam(View view) {
-        startActivity(new Intent(getApplicationContext(),ChooseSubjectActivity.class));
+        startActivity(new Intent(getApplicationContext(), SubjectActivity.class));
     }
 }

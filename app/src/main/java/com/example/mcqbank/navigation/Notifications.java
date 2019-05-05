@@ -1,13 +1,15 @@
-package com.example.mcqbank;
+package com.example.mcqbank.navigation;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class LogInActivity extends AppCompatActivity {
+import com.example.mcqbank.R;
+
+public class Notifications extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_in);
+        setContentView(R.layout.activity_notifications);
     }
 }

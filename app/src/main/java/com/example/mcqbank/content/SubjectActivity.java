@@ -1,4 +1,4 @@
-package com.example.mcqbank;
+package com.example.mcqbank.content;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,8 +6,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.mcqbank.Adapter.SubjectAdapter;
+import com.example.mcqbank.R;
 
-public class ChooseSubjectActivity extends AppCompatActivity {
+public class SubjectActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     SubjectAdapter subjectAdapter;
@@ -19,7 +20,7 @@ public class ChooseSubjectActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choose_subject);
+        setContentView(R.layout.activity_subject);
 
         recyclerView = findViewById(R.id.subjectRecyclerViewId);
 
@@ -27,6 +28,9 @@ public class ChooseSubjectActivity extends AppCompatActivity {
 
         subjectAdapter = new SubjectAdapter(getApplicationContext(),nineTenImages,nineTenSubjectName);
         recyclerView.setAdapter(subjectAdapter);
+
+       /* StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(3, LinearLayout.VERTICAL);
+        recyclerView.setLayoutManager(staggeredGridLayoutManager);*/
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(linearLayoutManager);

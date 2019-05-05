@@ -1,4 +1,4 @@
-package com.example.mcqbank;
+package com.example.mcqbank.starting;
 
 import android.app.DatePickerDialog;
 import android.graphics.Color;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TextView;
+
+import com.example.mcqbank.R;
 
 import java.util.Calendar;
 

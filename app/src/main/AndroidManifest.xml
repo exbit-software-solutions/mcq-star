@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ChooseSubjectActivity"></activity>
-        <activity android:name=".LogInActivity" />
+        <activity android:name=".content.SubjectActivity"/>
+        <activity android:name=".starting.LogInActivity" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".starting.SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,33 +25,33 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".starting.WelcomeActivity"
             android:label="Login"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Notifications"
+            android:name=".navigation.Notifications"
             android:label="Notifications" />
         <activity
-            android:name=".Feedback"
+            android:name=".navigation.Feedback"
             android:label="Feedback"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ForgetPassword"
+            android:name=".starting.ForgetPassword"
             android:label="Forget password"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".starting.SignUpActivity"
             android:label="Sign up"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SettingsActivity"
+            android:name=".navigation.SettingsActivity"
             android:label="@string/title_activity_settings" />
         <activity
-            android:name=".LeaderBoard"
+            android:name=".navigation.LeaderBoard"
             android:label="@string/title_activity_leader_board"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".content.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
 

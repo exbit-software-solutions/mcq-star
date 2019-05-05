@@ -1,4 +1,4 @@
-package com.example.mcqbank;
+package com.example.mcqbank.starting;
 
 
 import android.content.Intent;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.mcqbank.content.MainActivity;
+import com.example.mcqbank.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -73,7 +75,9 @@ public class WelcomeActivity extends AppCompatActivity {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
 
             // Signed in successfully, show authenticated UI.
-            startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
             finish();
             progressBar.setVisibility(View.GONE);
         } catch (ApiException e) {

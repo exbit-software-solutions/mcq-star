@@ -1,4 +1,4 @@
-package com.example.mcqbank;
+package com.example.mcqbank.navigation;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
