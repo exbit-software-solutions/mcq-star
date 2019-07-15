@@ -85,7 +85,7 @@
                 android:id="@+id/logInButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Login"
+                android:text="LOGIN"
                 android:textColor="@color/White"
                 android:textSize="25sp"
                 android:textStyle="bold"
