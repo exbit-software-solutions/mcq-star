@@ -81,7 +81,7 @@
                     android:layout_below="@id/welcomeLinearLayoutId"
                     android:layout_centerHorizontal="true"
                     android:backgroundTintMode="add"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_margin="10dp"
                     tools:ignore="UnusedAttribute" />
 

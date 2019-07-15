@@ -23,6 +23,10 @@ public class SubjectActivity extends AppCompatActivity {
         setContentView(R.layout.activity_subject);
 
         recyclerView = findViewById(R.id.subjectRecyclerViewId);
+        recyclerView.setHasFixedSize(true);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(linearLayoutManager);
 
         nineTenSubjectName = getResources().getStringArray(R.array.nine_ten_subject);
 
@@ -32,8 +36,7 @@ public class SubjectActivity extends AppCompatActivity {
        /* StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(3, LinearLayout.VERTICAL);
         recyclerView.setLayoutManager(staggeredGridLayoutManager);*/
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
-        recyclerView.setLayoutManager(linearLayoutManager);
+
 
 
     }
